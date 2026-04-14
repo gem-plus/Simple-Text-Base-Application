@@ -6,6 +6,7 @@ function isLoggedIn(req,res,next){
     req.user = data;
     next();}
     catch(err){
+        console.error(err);
         res.clearCookie("token");
         res.redirect("/login");
     }

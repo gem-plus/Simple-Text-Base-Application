@@ -17,4 +17,4 @@ app.use("/",authRoute);
 app.use("/",postRoute);
 
 
-app.listen(PORT || 3000);
+app.listen(PORT ||3000);
